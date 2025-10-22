@@ -142,3 +142,57 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Teilnehmer-Liste stylen */
+.participants-header {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #1a237e;
+  font-weight: 700;
+}
+
+.participants-list {
+  list-style: none; /* hide bullets */
+  padding-left: 0;
+  margin: 0 0 8px 0;
+  color: #333;
+  border-top: 1px solid #eee;
+}
+
+.participants-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 6px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.participant-email {
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 80%;
+}
+
+.participant-remove {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #c62828;
+  font-size: 0.95rem;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.participant-remove:hover {
+  background: rgba(198,40,40,0.08);
+}
+
+.no-participants {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 8px;
+}
